@@ -157,7 +157,7 @@ int main(int argc, char** argv) {
     icons_config.GlyphMinAdvanceX = iconFontSize;
     io.Fonts->AddFontFromFileTTF("./fonts/vscode-codicons/dist/codicon.ttf", iconFontSize, &icons_config, icons_ranges);
 
-    ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
+    ImVec4 clear_color = ImVec4(0.02f, 0.02f, 0.02f, 1.0f);
 
     int frame_count = 0;
     auto t_last = std::chrono::high_resolution_clock::now();
@@ -259,7 +259,8 @@ int main(int argc, char** argv) {
                 ImGuiWindowFlags_NoScrollWithMouse |
                 ImGuiWindowFlags_NoSavedSettings |
                 ImGuiWindowFlags_NoBringToFrontOnFocus |
-                ImGuiWindowFlags_NoNavFocus
+                ImGuiWindowFlags_NoNavFocus |
+                ImGuiWindowFlags_NoBackground
             );
 
             //style.Colors[ImGuiCol_ButtonHovered] = primary_color;
