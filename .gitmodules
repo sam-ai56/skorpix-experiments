@@ -1,0 +1,9 @@
+[submodule "fonts/vscode-codicons"]
+	path = fonts/vscode-codicons
+	url = https://github.com/microsoft/vscode-codicons.git
+[submodule "imgui"]
+	path = imgui
+	url = https://github.com/ocornut/imgui.git
+[submodule "IconFontCppHeaders"]
+	path = IconFontCppHeaders
+	url = https://github.com/juliettef/IconFontCppHeaders.git
