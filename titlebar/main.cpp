@@ -171,7 +171,7 @@ int main(int argc, char** argv) {
             {
                 resumeLoop();
                 io.DisplaySize = ImVec2(ev.xconfigure.width, ev.xconfigure.height);
-                pauseLoop(1);
+                pauseLoop(2);
             }
             // the mouse moves in the window area
             if (ev.type == MotionNotify)
@@ -245,9 +245,6 @@ int main(int argc, char** argv) {
         ImGui::NewFrame();
 
         {
-            static float f = 0.0f;
-            static int counter = 0;
-
             ImGui::SetNextWindowPos(ImVec2(0, 0));
             ImGui::SetNextWindowSize(io.DisplaySize);
             ImGui::Begin("Hello, world!", NULL,
